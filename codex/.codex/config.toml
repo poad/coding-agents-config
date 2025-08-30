@@ -1,0 +1,12 @@
+[model_providers.bedrock]
+name = "AmazonBedrock"
+base_url = "https://bedrock-runtime.us-west-2.amazonaws.com/openai/v1"
+env_key = "AWS_BEARER_TOKEN_BEDROCK"
+
+[profiles.bedrock]
+model_provider = "bedrock"
+model = "openai.gpt-oss-20b-1:0"
+
+[mcp_servers.serena]
+command = "uvx"
+args = ["--from", "git+https://github.com/oraios/serena@v0.1.4", "serena-mcp-server", "--context", "codex", "--enable-web-dashboard", "false"]

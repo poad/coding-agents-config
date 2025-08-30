@@ -1,0 +1,27 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "amazon-bedrock": {
+      "models": {
+        "openai.gpt-oss-20b-1:0": {
+          "name": "gpt-oss-20b"
+        },
+        "openai.gpt-oss-120b-1:0": {
+          "name": "gpt-oss-120b"
+        },
+        "us.amazon.nova-micro-v1:0": {
+          "name": "Nova Micro"
+        },
+        "us.amazon.nova-lite-v1:0": {
+          "name": "Nova Lite"
+        },
+        "us.amazon.nova-pro-v1:0": {
+          "name": "Nova Pro"
+        },
+        "us.amazon.nova-premier-v1:0": {
+          "name": "Nova Premier"
+        }
+      }
+    }
+  }
+}

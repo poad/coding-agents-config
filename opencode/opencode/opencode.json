@@ -1,7 +1,11 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "autoshare": false,
+  "autoupdate": true,
   "provider": {
-    "amazon-bedrock": {
+    "amazon": {
+      "npm": "@ai-sdk/amazon-bedrock",
+      "name": "Amazon Bedrock",
       "models": {
         "openai.gpt-oss-20b-1:0": {
           "name": "gpt-oss-20b"
@@ -10,18 +14,54 @@
           "name": "gpt-oss-120b"
         },
         "us.amazon.nova-micro-v1:0": {
-          "name": "Nova Micro"
+          "name": "Nova Micro (Cross Region)",
+          "limit": {
+            "context": 5000,
+            "output": 5000
+          },
+          "options": {
+            "max_tokens": 5000
+          }
         },
         "us.amazon.nova-lite-v1:0": {
-          "name": "Nova Lite"
+          "name": "Nova Lite (Cross Region)",
+          "limit": {
+            "context": 5000,
+            "output": 5000
+          },
+          "options": {
+            "max_tokens": 5000
+          }
         },
         "us.amazon.nova-pro-v1:0": {
-          "name": "Nova Pro"
+          "name": "Nova Pro (Cross Region)"
         },
         "us.amazon.nova-premier-v1:0": {
-          "name": "Nova Premier"
+          "name": "Nova Premier (Cross Region)"
+        },
+        "global.anthropic.claude-sonnet-4-20250514-v1:0": {
+          "name": "Claude Sonnet 4 (Global)",
+          "limit": {
+            "context": 10000,
+            "output": 5000
+          },
+          "options": {
+            "max_tokens": 5000
+          }
         }
       }
+    }
+  },
+  "mcp": {
+    "serena": {
+      "type": "local",
+      "command": ["uvx", "--from", "git+https://github.com/oraios/serena.git", "serena", "start-mcp-server"],
+      "enabled": true
+    },
+    "context7": {
+      "type": "local",
+      "command": ["npx", "-y", "@upstash/context7-mcp@latest"],
+      "enabled": true
     }
   }
 }

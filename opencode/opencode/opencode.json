@@ -46,7 +46,7 @@
             "output": 5000
           },
           "options": {
-            "max_tokens": 5000
+            "max_tokens": 4096
           }
         }
       }

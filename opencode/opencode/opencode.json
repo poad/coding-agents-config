@@ -44,9 +44,6 @@
           "limit": {
             "context": 10000,
             "output": 5000
-          },
-          "options": {
-            "max_tokens": 4096
           }
         }
       }
@@ -55,12 +52,22 @@
   "mcp": {
     "serena": {
       "type": "local",
-      "command": ["uvx", "--from", "git+https://github.com/oraios/serena.git", "serena", "start-mcp-server"],
+      "command": [
+        "uvx",
+        "--from",
+        "git+https://github.com/oraios/serena.git",
+        "serena",
+        "start-mcp-server"
+      ],
       "enabled": true
     },
     "context7": {
       "type": "local",
-      "command": ["npx", "-y", "@upstash/context7-mcp@latest"],
+      "command": [
+        "npx",
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ],
       "enabled": true
     }
   }

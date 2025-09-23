@@ -1,6 +1,15 @@
 {
   "mcpServers": {
     "context7": {
+      "type": "stdio",
+      "url": "",
+      "headers": {},
+      "oauthScopes": [
+        "openid",
+        "email",
+        "profile",
+        "offline_access"
+      ],
       "command": "npx",
       "args": [
         "-y",
@@ -11,6 +20,15 @@
       "disabled": false
     },
     "serena": {
+      "type": "stdio",
+      "url": "",
+      "headers": {},
+      "oauthScopes": [
+        "openid",
+        "email",
+        "profile",
+        "offline_access"
+      ],
       "command": "uvx",
       "args": [
         "--from",
@@ -20,7 +38,9 @@
         "--context",
         "ide-assistant"
       ],
-      "env": {}
+      "env": {},
+      "timeout": 120000,
+      "disabled": false
     }
   }
 }

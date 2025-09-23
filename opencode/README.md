@@ -19,6 +19,15 @@ New-Item -ItemType SymbolicLink -Path $env:USERPROFILE\.config\opencode -Target 
 
 `$.provider.amazon-bedrock.models` のキーにアプリケーション推論プロファイルのARNを設定します。
 
+ただし、環境変数 `AWS_REGION` と使用するアプリケーション推論プロファイルのリージョン名を合わせておく必要があります。
+
+```shell
+export AWS_REGION=us-west-2
+
+# opencode.json の $.provider.amazon-bedrock.models のキー
+arn:aws:bedrock:us-west-2:{env:AWS_ACCOUNT_ID}:application-inference-profile/{env:GPT_OSS_20B_APPLICATION_PROFILE_ID}
+```
+
 ## Links
 
 - [opencode](https://opencode.ai/)

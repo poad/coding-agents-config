@@ -48,6 +48,16 @@
           }
         }
       }
+    },
+    "Amazon Bedrock": {
+      "npm": "@ai-sdk/amazon-bedrock",
+      "name": "Amazon Bedrock (Profile)",
+      "env": ["AWS_REGION", "AWS_ACCOUNT_ID", "GPT_OSS_20B_APPLICATION_PROFILE_ID"],
+      "models": {
+        "arn:aws:bedrock:{env:AWS_REGION}:{env:AWS_ACCOUNT_ID}:application-inference-profile/{env:GPT_OSS_20B_APPLICATION_PROFILE_ID}": {
+          "name": "gpt-oss-20b" 
+        }
+      }
     }
   },
   "mcp": {

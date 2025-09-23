@@ -23,9 +23,10 @@ New-Item -ItemType SymbolicLink -Path $env:USERPROFILE\.config\opencode -Target 
 
 ```shell
 export AWS_REGION=us-west-2
+export US_WEST_2_GPT_OSS_20B_APPLICATION_PROFILE_ID=xyz1234abc # us-west-2 リージョンのアプリケーション推論プロファイルのID
 
 # opencode.json の $.provider.amazon-bedrock.models のキー
-arn:aws:bedrock:us-west-2:{env:AWS_ACCOUNT_ID}:application-inference-profile/{env:GPT_OSS_20B_APPLICATION_PROFILE_ID}
+arn:aws:bedrock:us-west-2:{env:AWS_ACCOUNT_ID}:application-inference-profile/{env:US_WEST_2_GPT_OSS_20B_APPLICATION_PROFILE_ID}
 ```
 
 ## Links

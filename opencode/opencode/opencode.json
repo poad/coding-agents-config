@@ -7,7 +7,11 @@
     "amazon": {
       "npm": "@ai-sdk/amazon-bedrock",
       "name": "Amazon Bedrock",
+      "env": ["AWS_REGION", "AWS_ACCOUNT_ID", "US_WEST_2_GPT_OSS_20B_APPLICATION_PROFILE_ID"],
       "models": {
+        "arn:aws:bedrock:{env:AWS_REGION}:{env:AWS_ACCOUNT_ID}:application-inference-profile/{env:US_WEST_2_GPT_OSS_20B_APPLICATION_PROFILE_ID}": {
+          "name": "gpt-oss-20b (Profile)" 
+        },
         "openai.gpt-oss-20b-1:0": {
           "name": "gpt-oss-20b"
         },
@@ -46,16 +50,6 @@
             "context": 10000,
             "output": 5000
           }
-        }
-      }
-    },
-    "Amazon Bedrock": {
-      "npm": "@ai-sdk/amazon-bedrock",
-      "name": "Amazon Bedrock (Profile)",
-      "env": ["AWS_REGION", "AWS_ACCOUNT_ID", "US_WEST_2_GPT_OSS_20B_APPLICATION_PROFILE_ID"],
-      "models": {
-        "arn:aws:bedrock:{env:AWS_REGION}:{env:AWS_ACCOUNT_ID}:application-inference-profile/{env:US_WEST_2_GPT_OSS_20B_APPLICATION_PROFILE_ID}": {
-          "name": "gpt-oss-20b" 
         }
       }
     }

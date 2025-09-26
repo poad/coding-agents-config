@@ -32,5 +32,5 @@ arn:aws:bedrock:us-west-2:{env:AWS_ACCOUNT_ID}:application-inference-profile/{en
 ## Links
 
 - [opencode](https://opencode.ai/)
-- [GitHub - sst/opencode: opencode](https://github.com/sst/opencode)
+- [GitHub - sst/opencode: AI coding agent, built for the terminal.](https://github.com/sst/opencode)
 - [VS Code extension for opencode](https://marketplace.visualstudio.com/items?itemName=sst-dev.opencode)

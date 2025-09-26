@@ -1,0 +1,4 @@
+history-*
+logs
+command-history-state.json
+config.json

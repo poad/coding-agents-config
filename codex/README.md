@@ -11,4 +11,4 @@ ln -s $(pwd)/.codex ~/.codex
 ## Links
 
 - [Codex CLI](https://developers.openai.com/codex/cli)
-- [GitHub - openai/codex-cli: Command line interface for OpenAI Codex](https://github.com/openai/codex)
+- [GitHub - openai/codex-cli: Lightweight coding agent that runs in your terminal](https://github.com/openai/codex)

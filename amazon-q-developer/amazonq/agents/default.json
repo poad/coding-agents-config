@@ -57,5 +57,5 @@
     "agentSpawn": [],
     "userPromptSubmit": []
   },
-  "useLegacyMcpJson": false
+  "useLegacyMcpJson": true
 }

@@ -4,7 +4,7 @@
     "CLAUDE_CODE_USE_BEDROCK": "true",
     "AWS_REGION": "us-west-2",
     "ANTHROPIC_SMALL_FAST_MODEL_AWS_REGION": "us-west-2",
-    "ANTHROPIC_MODEL": "global.anthropic.claude-sonnet-4-20250514-v1:0",
+    "ANTHROPIC_MODEL": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
     "ANTHROPIC_SMALL_FAST_MODEL": "us.anthropic.claude-3-5-haiku-20241022-v1:0",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "us.anthropic.claude-3-5-haiku-20241022-v1:0",
     "DISABLE_PROMPT_CACHING": "true"

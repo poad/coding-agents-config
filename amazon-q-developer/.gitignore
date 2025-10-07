@@ -2,3 +2,4 @@ cache
 history
 *.log
 .cli_bash_history
+active-user-state.json

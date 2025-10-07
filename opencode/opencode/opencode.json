@@ -45,11 +45,10 @@
           "name": "Nova Premier (Cross Region)"
         },
         "global.anthropic.claude-sonnet-4-20250514-v1:0": {
-          "name": "Claude Sonnet 4 (Global)",
-          "limit": {
-            "context": 10000,
-            "output": 5000
-          }
+          "name": "Claude Sonnet 4 (Global)"
+        },
+        "global.anthropic.claude-sonnet-4-5-20250929-v1:0": {
+          "name": "Claude Sonnet 4.5 (Global)"
         }
       }
     }
@@ -73,6 +72,11 @@
         "-y",
         "@upstash/context7-mcp@latest"
       ],
+      "enabled": true
+    },
+    "aws-knowledge-mcp-server": {
+      "type": "remote",
+      "url": "https://knowledge-mcp.global.api.aws",
       "enabled": true
     }
   }

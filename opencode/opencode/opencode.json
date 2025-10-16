@@ -49,6 +49,9 @@
         },
         "global.anthropic.claude-sonnet-4-5-20250929-v1:0": {
           "name": "Claude Sonnet 4.5 (Global)"
+        },
+        "global.anthropic.claude-haiku-4-5-20251001-v1:0": {
+          "name": "Claude Haiku 4.5 (Global)"
         }
       }
     }

@@ -12,11 +12,14 @@
         "arn:aws:bedrock:{env:AWS_REGION}:{env:AWS_ACCOUNT_ID}:application-inference-profile/{env:US_WEST_2_GPT_OSS_20B_APPLICATION_PROFILE_ID}": {
           "name": "gpt-oss-20b (Profile)" 
         },
-        "openai.gpt-oss-20b-1:0": {
-          "name": "gpt-oss-20b"
+        "global.amazon.nova-2-lite-v1:0": {
+          "name": "Nova 2 Lite"
         },
         "openai.gpt-oss-120b-1:0": {
           "name": "gpt-oss-120b"
+        },
+        "openai.gpt-oss-20b-1:0": {
+          "name": "gpt-oss-20b"
         },
         "us.amazon.nova-micro-v1:0": {
           "name": "Nova Micro (Cross Region)",
@@ -44,14 +47,14 @@
         "us.amazon.nova-premier-v1:0": {
           "name": "Nova Premier (Cross Region)"
         },
-        "global.anthropic.claude-sonnet-4-20250514-v1:0": {
-          "name": "Claude Sonnet 4 (Global)"
-        },
         "global.anthropic.claude-sonnet-4-5-20250929-v1:0": {
           "name": "Claude Sonnet 4.5 (Global)"
         },
         "global.anthropic.claude-haiku-4-5-20251001-v1:0": {
           "name": "Claude Haiku 4.5 (Global)"
+        },
+        "global.anthropic.claude-opus-4-5-20251101-v1:0": {
+          "name": "Claude Opus 4.5 (Global)"
         }
       }
     }

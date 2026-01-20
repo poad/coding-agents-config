@@ -6,3 +6,5 @@ history.jsonl
 debug
 stats-cache.json
 plugins/known_marketplaces.json
+cache
+backups
